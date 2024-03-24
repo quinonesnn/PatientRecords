@@ -1,14 +1,16 @@
 import { Routes } from '@angular/router';
-import { LandingComponent } from './landing/landing.component';
-import { PatientRecordsComponent } from './patient-records/patient-records.component';
+
+import { LoginComponent } from "./auth/login/login.component";
+import { authGuardGuard } from "./auth/auth-guard.guard";
 
 export const routes: Routes = [
     {
-        path: 'landing',
-        component: LandingComponent,
+        path: 'login',
+        component: LoginComponent
     },
-    {        
-        path: 'patients',
-        component: PatientRecordsComponent,
+    {
+        path: 'dashboard',
+        loadChildren: () => import('./dashboard/dashboard.module').then(m=>m.DashboardModule),
+        canMatch: [authGuardGuard]
     }
 ];

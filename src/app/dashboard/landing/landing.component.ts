@@ -1,12 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule, ReactiveFormsModule, FormControl, FormBuilder } from '@angular/forms';
-import { NgbHighlight } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'patient-details-landing',
-  standalone: true,
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, NgbHighlight],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss'
 })

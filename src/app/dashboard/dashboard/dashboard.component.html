@@ -1,0 +1,4 @@
+<patient-details-side-bar [isExpanded]="sidebarExpanded" (toggleSidebar)="sidebarExpanded = !sidebarExpanded"></patient-details-side-bar>
+<div class="patient-records" [ngClass]="{ 'sidebarExpanded' : sidebarExpanded}">
+    <router-outlet></router-outlet>
+</div>

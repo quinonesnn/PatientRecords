@@ -1,14 +1,3 @@
-.patients-records {
-    padding: 16px;
-    margin-left: 60px;
 
-    &__record-table{
-        border: 1px solid #f0f0f0;
-    };
-    //When the side bar expands or shrinks the table needs to move
-    &.sidebarExpanded {
-        margin-left: 210px;
-    }
-}
 
 

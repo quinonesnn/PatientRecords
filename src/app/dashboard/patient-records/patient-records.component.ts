@@ -4,8 +4,6 @@ import { ColDef, GridApi } from 'ag-grid-community';
 
 @Component({
   selector: 'patient-details-patient-records',
-  standalone: true,
-  imports: [AgGridModule],
   templateUrl: './patient-records.component.html',
   styleUrl: './patient-records.component.scss'
 })

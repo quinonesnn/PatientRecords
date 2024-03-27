@@ -1,19 +1,19 @@
-// Global
-import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { tap, delay } from 'rxjs/operators';
+//Global
+import { Injectable } from "@angular/core";
+
+import { Observable, of } from "rxjs";
+import { tap, delay } from "rxjs/operators";
 
 @Injectable({
-    providedIn: 'root',
+    providedIn: 'root'
 })
 export class AuthService {
-    isLoggedIn: boolean = true;
-
-    redirectUrl: string|null = null;
+    isLoggedIn: any = 0;
+    reirectUrl: string|null = null;
 
     login(): Observable<boolean> {
         return of(true).pipe(
-            delay(1000),
+            delay(2000),
             tap(() => this.isLoggedIn = true)
         );
     }
